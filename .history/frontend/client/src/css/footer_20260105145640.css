@@ -1,0 +1,18 @@
+:root{
+    --footer-bg-color: #222529;
+}
+
+.main-footer{
+    max-height: 40rem;
+    width: 100%;
+    background-color: var(--footer-bg-color);
+    color: white;
+    /* display: flex; */
+}
+
+.main-footer .footer-container{
+    height: auto;
+    width: 90%;
+    background-color: aquamarine;
+    padding: 0 5rem;
+}

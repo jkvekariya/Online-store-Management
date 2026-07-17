@@ -1,0 +1,301 @@
+:root {
+  --font-family-header: "BBH Bartle", sans-serif;
+  --font-family-ubuntu: "Ubuntu", sans-serif;
+  --font-family-nunito: "Nunito", sans-serif;
+  --font-family-firasans: "Fira Sans", sans-serif;
+}
+
+/*-------------------- ABOUT US AND OUR SKILLS STYLING------------------- */
+.about-section {
+  display: flex;
+  gap: 60px;
+  padding: 50px 10%;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+/* IMAGE */
+
+.about-image {
+  height: 21rem;
+  display: flex;
+  align-items: center;
+}
+
+.about-image img {
+  cursor: pointer;
+  min-height: 19rem;
+  width: 100%;
+  max-width: 520px;
+  transition: scale 0.2s ease-in-out;
+}
+
+.about-image img:hover {
+  scale: 1.07;
+}
+
+/* CONTENT */
+.about-content {
+  max-width: 500px;
+}
+
+.about-content h2 {
+  font-family: var(--font-family-firasans);
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-family: var(--font-family-nunito);
+  font-size: 15px;
+  color: #888;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* QUOTE */
+.quote {
+  display: flex;
+  gap: 15px;
+  margin: 5px 0;
+}
+
+.quote-icon {
+  font-size: 28px;
+  color: #000;
+}
+
+.quote p {
+  font-family: var(--font-family-ubuntu);
+  font-style: italic;
+  color: #222;
+}
+
+/* DIVIDER */
+.divider {
+  width: 100%;
+  height: 2px;
+  background: repeating-linear-gradient(
+    to right,
+    #ddd,
+    #ddd 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  margin: 30px 0;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons span {
+  width: 42px;
+  height: 42px;
+  background-color: #222;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icons span:hover {
+  transform: translateY(-4px);
+}
+
+/* ===============================
+   ANIMATION ON PAGE LOAD
+   =============================== */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+.delay-4 {
+  animation-delay: 0.8s;
+}
+.delay-5 {
+  animation-delay: 1s;
+}
+.delay-6 {
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quote {
+    justify-content: center;
+  }
+}
+
+/*-------------------- EXPLORE OUR PRODUCTS STYLING------------------- */
+
+/* LAYOUT */
+.explore-section {
+  display: flex;
+  gap: 60px;
+  padding: 80px 8%;
+  background-color: #fff;
+}
+
+.explore-text {
+  flex: 1;
+}
+
+.explore-text h2 {
+  font-family: var(--font-family-firasans);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.explore-text p {
+  font-family: var(--font-family-nunito);
+  color: #888;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.quote-box {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.quote-icon {
+  font-size: 26px;
+  color: #000;
+  flex-shrink: 0;
+}
+
+.quote-box span {
+  font-style: italic;
+  font-size: 16px;
+  color: #222;
+  line-height: 1.6;
+}
+
+.explore-text blockquote {
+  font-family: var(--font-family-ubuntu);
+  font-style: italic;
+  font-size: 16px;
+  color: #000;
+  margin: 20px 0;
+}
+
+.explore-text button {
+  padding: 12px 28px;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.explore-text button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* RIGHT GRID */
+.explore-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-box {
+  background: #f7f7f7;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.grid-box h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.grid-box span {
+  color: #999;
+  font-style: italic;
+}
+
+.grid-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =============================
+   PAGE LOAD ANIMATION
+   ============================= */
+
+.animate {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeUp 0.9s ease forwards;
+}
+
+.fade-delay-1 {
+  animation-delay: 0.2s;
+}
+.fade-delay-2 {
+  animation-delay: 0.4s;
+}
+.fade-delay-3 {
+  animation-delay: 0.6s;
+}
+.fade-delay-4 {
+  animation-delay: 0.8s;
+}
+.fade-delay-5 {
+  animation-delay: 1s;
+}
+.fade-delay-6 {
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .explore-section {
+    flex-direction: column;
+  }
+}

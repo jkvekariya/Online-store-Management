@@ -1,0 +1,10 @@
+:root{
+    --footer-bg-color: #222529;
+}
+
+.main-footer{
+    max-height: 20rem;
+    width: 100%;
+    background-color: var(--footer-bg-color);
+    color: white;
+}

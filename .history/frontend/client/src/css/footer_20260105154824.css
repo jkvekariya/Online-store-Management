@@ -1,0 +1,77 @@
+:root {
+  --footer-bg-color: #222529;
+  --font-family-header: "BBH Bartle", sans-serif;;
+  --font-family-ubuntu: "Ubuntu", sans-serif;
+  --font-family-nunito: "Nunito", sans-serif;
+}
+
+.main-footer {
+  max-height: 40rem;
+  width: 100%;
+  background-color: var(--footer-bg-color);
+  color: white;
+}
+
+.main-footer .footer-container {
+  height: 20rem;
+  /* background-color: aquamarine; */
+  margin: 0 5rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.footer-container .sec-one-about,
+.sec-two-customer-link,
+.sec-three-useful-link,
+.sec-four-contact {
+  height: auto;
+  /* background-color: aqua; */
+  margin: 1.4rem 0;
+}
+
+.sec-two-customer-link .footer-list,
+.sec-three-useful-link .useful-link li {
+  list-style: none;
+  line-height: 27px;
+  /* cursor: pointer; */
+}
+.sec-two-customer-link .footer-list li a,
+.sec-three-useful-link .useful-link li a{
+  text-decoration: none;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.sec-one-about h1,
+.sec-two-customer-link h2 ,
+.sec-three-useful-link h2,
+.sec-four-contact h2 
+{
+  margin-bottom: 0.8rem;
+}
+.sec-four-contact p{
+    margin-bottom: 0.7rem;
+}
+
+.media-icons{
+    display: flex;
+    gap: 16px;
+    cursor: pointer;;
+}
+
+.media-icons 
+.facebook-icon,
+.twitter-icon,
+.instagram-icon{
+    height: 35px;
+    width: 35px;
+    color: #222529;
+    background-color: #94B4C1;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}

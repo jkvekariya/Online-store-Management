@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+    --background-color: #e6e6e68e;
+    --header-text-color: #213448;
+    --home-link-color: #4B9DA9;
+    --title-color: #212447;
+    --title-hover-color: #547792;
+}
+
+  .b-header-bg {
+    margin-top: 30px;
+    height: 26vh;
+    width: 100vw;
+    /* background-color: aqua; */
+    background: var(--background-color);
+    /* background-blend-mode: darken; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-position-y: 56%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .b-header-bg .page-title {
+    height: 10rem;
+    width: 20rem;
+    display: grid;
+    place-items: center;
+    align-content: center;
+  }
+  
+  .b-header-bg .page-title h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: var(--header-text-color);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    z-index: 100;
+  }
+  
+   .b-header-bg .page-title .ul-links ul{
+    /* height: 4rem; */
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0;
+  }
+
+  .b-header-bg .page-title .ul-links ul #home-link a {
+    color: var(--home-link-color);
+  }
+
+
+  .b-header-bg .page-title .ul-links ul li{
+    /* height: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .b-header-bg .page-title .ul-links ul li svg{
+      font-size: 1.3rem;
+      color: var(--title-color);
+  }
+  
+  .b-header-bg .page-title .ul-links ul li a{
+    width: max-content;
+    text-decoration: none;
+    padding: 5px;
+    color: var(--title-color);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 0.8rem;
+    font-style: normal;
+  } 
+  
+  .b-header-bg .page-title .ul-links ul li a:hover{
+      color: var(--title-hover-color);
+  }

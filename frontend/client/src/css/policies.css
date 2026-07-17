@@ -1,0 +1,81 @@
+.policy-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: var(--font-family-lato);
+    line-height: 1.8;
+    color: #333;
+}
+
+.policy-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.policy-header h1 {
+    font-family: var(--font-family-jost);
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.policy-content h3 {
+    font-family: var(--font-family-jost);
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 4px solid #1a1a1a;
+    padding-left: 15px;
+}
+
+.policy-content p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.policy-content ul,
+.policy-content ol {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.policy-content li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.policy-content strong {
+    color: #000;
+}
+
+.policy-content a {
+    color: #c2185b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.policy-content a:hover {
+    text-decoration: underline;
+}
+
+.effective-date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .policy-header h1 {
+        font-size: 2rem;
+    }
+
+    .policy-container {
+        margin: 20px auto;
+    }
+}

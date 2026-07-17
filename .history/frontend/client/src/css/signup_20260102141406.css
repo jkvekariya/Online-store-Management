@@ -1,0 +1,54 @@
+.main-container{
+    width: 100%;
+    max-width: 420px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label{
+    font-size: 0.9rem;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    /* margin-bottom: 5px; */
+}
+
+.main-container .email-box,.password-box,.first-name-box,.last-name-box{
+ margin: 0.5rem 0;
+ width: 90%;
+}
+
+input{
+    /* padding: 8px; */
+    width: 90%;
+    margin-top: 5px;
+    /* box-sizing: border-box; */
+}
+
+.main-container h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3a3d3a;
+    color: white;
+    border: none;
+}

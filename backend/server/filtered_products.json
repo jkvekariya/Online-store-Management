@@ -1,0 +1,87 @@
+[
+  {
+    "_id": "6998534eec6911afd3c8a4df",
+    "title": "Loose Fit Wool Blend Coat",
+    "description": "Refresh your everyday layering with our Loose Blue Denim Jacket, designed to deliver comfort, durability, and effortless street-style appeal. Made from 100% premium cotton denim, this jacket offers a breathable yet structured feel that holds its shape while remaining comfortable for all-day wear. The medium-weight fabric is durable, fade-resistant, and softens naturally over time, giving it a relaxed, lived-in look with continued use.\n\nThe loose-fit silhouette allows easy movement and makes layering simple, whether styled over t-shirts, hoodies, dresses, or crop tops. It features a classic structured collar, full button-front closure, and chest flap pockets that enhance its timeless denim character. Adjustable button cuffs provide a customizable fit, while reinforced stitching ensures long-lasting durability. Side pockets add practical functionality without compromising the clean design.\n\nMaterial Composition:\n\n- 100% Premium Cotton Denim\n\nFabric Features:\n\n- Breathable and durable fabric\n- Medium-weight structured denim\n- Softens with wear\n- Skin-friendly and comfortable\n- Reinforced stitching for longevity\n\nFit & Design Details:\n\n- Relaxed loose-fit silhouette\n- Classic collar neckline\n- Button-front closure\n- Two chest flap pockets\n- Side pockets for added convenience\n- Adjustable button cuffs\n- Light to medium blue wash finish\n\nCare Instructions:\n\n- Machine wash cold\n- Wash with similar colors\n- Do not bleach\n- Tumble dry low or hang to dry\n- Iron on medium heat if required\n\nPerfect for casual outings, travel, or everyday wear, this denim jacket pairs effortlessly with jeans, skirts, joggers, or dresses for a versatile and timeless look.",
+    "price": 1400,
+    "comparePrice": 1950,
+    "stockQuantity": 43,
+    "inStock": true,
+    "image": "https://m.media-amazon.com/images/I/91RSBvi-ssL._AC_SX679_.jpg",
+    "category": "Jackets",
+    "vendor": "Prada",
+    "tags": [
+      "wool",
+      "coat",
+      "winter",
+      "trendy jacket"
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "S"
+    ],
+    "colors": [
+      "#666666",
+      "#000000"
+    ],
+    "isSale": true,
+    "images": [
+      "https://m.media-amazon.com/images/I/91TOWSfJENL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/91snJBxnrAL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71pfYDetTLL._AC_SX679_.jpg"
+    ],
+    "productType": "Jacket",
+    "rating": 0,
+    "numReviews": 0,
+    "viewCount": 569,
+    "soldCount": 67,
+    "createdAt": "2026-02-20T12:27:58.058Z",
+    "__v": 0
+  },
+  {
+    "_id": "6998534eec6911afd3c8a4de",
+    "title": "Black Classic Pullover Hoodie",
+    "description": "The deep black color gives it a clean, timeless appeal that pairs easily with jeans, joggers, or shorts. Featuring an adjustable drawstring hood, ribbed cuffs, and hem, this hoodie ensures a secure and comfortable fit. The spacious front kangaroo pocket adds both functionality and a classic streetwear touch. Reinforced stitching enhances durability, ensuring long-lasting wear even with frequent use.\n\nMaterial Composition:\n\n- 80% Premium Cotton\n- 20% Polyester\n- Soft fleece interior for added warmth\n\nFabric Features:\n\n- Soft and breathable fabric\n- Warm fleece lining\n- Durable and long-lasting\n- Fade-resistant black color\n- Comfortable for all-day wear\n\nFit & Design Details:\n\n- Regular fit silhouette\n- Pullover style\n- Adjustable drawstring hood\n- Front kangaroo pocket\n- Ribbed cuffs and hem\n- Classic solid black finish\n\nCare Instructions:\n\n- Machine wash cold\n- Wash with similar colors\n- Do not bleach\n- Tumble dry low\n- Iron on low heat if needed\n\nIdeal for casual outings, gym wear, travel, or everyday street style, this black pullover hoodie is a wardrobe essential that combines comfort, durability, and timeless design.",
+    "price": 890,
+    "comparePrice": 1189,
+    "stockQuantity": 89,
+    "inStock": true,
+    "image": "/photos/hoodie-front.png",
+    "category": "Unisex",
+    "vendor": "Adidas",
+    "tags": [
+      "sweatshirt",
+      "fleece",
+      "casual",
+      "pullover hoodie",
+      "unisex hoodie",
+      "cotton hoodie",
+      "fleece hoodie",
+      "casual wea"
+    ],
+    "sizes": [
+      "L",
+      "M",
+      "S",
+      "XL"
+    ],
+    "colors": [
+      "#0000ff",
+      "#333333"
+    ],
+    "isSale": true,
+    "images": [
+      "/photos/hoodie-front.png",
+      "/photos/hoodie-back.png"
+    ],
+    "productType": "Hoodies",
+    "rating": 0,
+    "numReviews": 0,
+    "viewCount": 341,
+    "soldCount": 167,
+    "createdAt": "2026-02-20T12:27:58.057Z",
+    "__v": 0
+  }
+]

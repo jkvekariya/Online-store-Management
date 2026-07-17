@@ -1,0 +1,46 @@
+import React from 'react'
+import { useState } from 'react'
+import "../../css/login.css"
+import Bodyheader from '../../components/BodyHeader';
+
+const Login = () => {
+
+    const [email, setEMail] = useState("");
+    const [password, setPassword] = useState("");
+
+  return (
+    <>
+        <Bodyheader title="Login"/>
+         <div className='main-container'>
+      <h2>Login Now</h2>
+        <div className='email-box'>
+            <label htmlFor="email">Email<em>*</em></label>
+            <input type="email" 
+            id="login-email" 
+            value={email} 
+            onChange={(e) => setEMail(e.target.value)}
+            placeholder='Enter your email'
+            />
+        </div>
+        <div className='password-box'>
+            <label htmlFor="password">Password<em>*</em></label>
+            <input type="password" 
+            id="login-password" 
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder='Enter your password'
+            />
+        </div>
+        <div className='verify-forgetpassword'>
+            <input type="checkbox" id='checkbox' name='checkbox' />
+            <p>Forget password?</p>
+        </div>
+      <div className='btn'>
+        <button onClick={() => {}}>Login</button>
+      </div>
+    </div>
+    </>
+  )
+}
+
+export default Login

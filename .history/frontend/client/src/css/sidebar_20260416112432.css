@@ -1,0 +1,302 @@
+/* Sidebar Overlay */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.sidebar-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Sidebar Container */
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Start off-screen */
+    width: 100%;
+    max-width: 800px;
+    /* Adjust as needed for the two-column layout */
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.sidebar-container.open {
+    right: 0;
+}
+
+/* Header */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sidebar-header h2 {
+    font-family: var(--font-family-ubuntu);
+    font-size: 2rem;
+    color: #000;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Body Layout */
+.sidebar-body {
+    display: flex;
+    gap: 40px;
+}
+
+/* Left Menu */
+.sidebar-menu {
+    flex: 1;
+    min-width: 250px;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    /* Changed from 15px to allow Link to fill the area */
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    color: #555;
+    transition: background 0.2s;
+}
+
+.sidebar-item-content,
+.sidebar-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* .sidebar-menu li:hover {
+    background-color: #f5f5f5;
+} */
+
+.sidebar-menu li.active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Right Content */
+.sidebar-content-details {
+    flex: 2;
+}
+
+.info-box {
+    border: 1px solid #eee;
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.info-box h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.info-row p {
+    font-family: var(--font-family-nunito);
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    color: #333;
+    font-size: 1rem;
+}
+
+.info-row .label {
+    font-family: var(--font-family-firasans);
+    font-weight: 500;
+    margin-top: 15px;
+    display: flex;
+    /* Flex to align icon */
+    align-items: center;
+    /* Center vertical */
+    gap: 8px;
+    /* Space between icon and text */
+}
+
+.edit-form label {
+    display: flex;
+    /* Flex to align icon */
+    align-items: center;
+    /* Center vertical */
+    gap: 8px;
+    /* Space between icon and text */
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+}
+
+.label-icon {
+    color: #555;
+    font-size: 1rem;
+}
+
+.edit-btn,
+.edit-link {
+    background: none;
+    border: none;
+    color: #d8572a;
+    /* Example highlight color */
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* Edit Form Styles */
+.edit-form .input-group {
+    margin-bottom: 15px;
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+}
+
+.edit-form input,
+.edit-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.save-btn {
+    padding: 8px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.cancel-btn {
+    padding: 8px 20px;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.save-btn:hover {
+    opacity: 0.8;
+}
+
+.cancel-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.logout-action-btn,
+.delete-action-btn {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.logout-action-btn:hover,
+.delete-action-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.logout-section,
+.manage-account-section {
+    margin-top: 30px;
+}
+
+.logout-section h4,
+.manage-account-section h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+.logout-section p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .sidebar-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .sidebar-body {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar-header h2 {
+        font-size: 1.5rem;
+    }
+}
